@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="startTime()">
+    <h1 class="class1" style="margin-top: 0px">_ _ _ Family Tree _ _ _</h1>
+    <div class="main" style="margin-top: -30px">
+      <!--1st line-->
+      <div class="row">
+        <div class="family with-relation">
+          <div class="person" id="AlexId">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/13.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+            <div ondblclick="renamePerson(0)" class="person-name pointer">
+              <input class="cursor-text" id="0" disabled type="text" value="Alex" />
+              <div class="row none">
+                <img  onclick="submitRename(0)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(0)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="person">
+             <div class="recycle-wrapper" >
+
+               <img class="person-img" src="images/14.png" alt="Joana" />
+               <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+             </div>
+
+            <div ondblclick="renamePerson(1)" class="person-name pointer">
+              <input class="cursor-text" id="1" disabled type="text" value="Joana" />
+              <div class="row none">
+                <img onclick="submitRename(1)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(1)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="family-relation-line"></div>
+      </div>
+      </div>
+      <!--2nd line-->
+      <div class="row">
+        <div class="family with-relation">
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/3.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(2)" class="person-name pointer">
+              <input class="cursor-text" id="2" disabled type="text" value="Sam" />
+              <div class="row none">
+                <img onclick="submitRename(2)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(2)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/10.png" alt="Joana" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(3)" class="person-name pointer">
+              <input class="cursor-text" id="3" disabled type="text" value="Ann" />
+              <div class="row none">
+                <img onclick="submitRename(3)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(3)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-left"></div>
+          </div>
+          <div class="family-relation-line"></div>
+        </div>
+        <div class="family with-relation">
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/5.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(4)" class="person-name pointer">
+              <input class="cursor-text" id="4" disabled type="text" value="Dorian" />
+              <div class="row none">
+                <img onclick="submitRename(4)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(4)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-right"></div>
+          </div>
+
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/12.png" alt="Joana" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(5)" class="person-name pointer">
+              <input class="cursor-text" id="5" disabled type="text" value="Olivia" />
+              <div class="row none">
+                <img onclick="submitRename(5)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(5)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="family-relation-line"></div>
+        </div>
+      </div>
+      <!--3rd line-->
+      <div class="row">
+        <div class="family with-relation">
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/7.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(6)" class="person-name pointer">
+              <input class="cursor-text" id="6" disabled type="text" value="Mike" />
+              <div class="row none">
+                <img onclick="submitRename(6)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(6)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/4.png" alt="Joana" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(7)" class="person-name pointer">
+              <input class="cursor-text" id="7" disabled type="text" value="Helen" />
+              <div class="row none">
+                <img onclick="submitRename(7)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(7)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>           
+            <div class="child-line child-line-left"></div>
+          </div>
+          <div class="family-relation-line"></div>
+        </div>
+        <div class="family with-relation">
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/9.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(8)" class="person-name pointer">
+              <input class="cursor-text" id="8" disabled type="text" value="Juan" />
+              <div class="row none">
+                <img onclick="submitRename(8)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(8)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-right"></div>
+          </div>
+
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/8.png" alt="Joana" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(9)" class="person-name pointer">
+              <input class="cursor-text" id="9" disabled type="text" value="Emma" />
+              <div class="row none">
+                <img onclick="submitRename(9)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(9)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="family-relation-line"></div>
+        </div>
+
+        <div class="family with-relation">
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/11.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(10)" class="person-name pointer">
+              <input class="cursor-text" id="10" disabled type="text" value="Noah" />
+              <div class="row none">
+                <img onclick="submitRename(10)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(10)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-right"></div>
+          </div>
+
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/6.png" alt="Joana" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(11)" class="person-name pointer">
+              <input class="cursor-text" id="11" disabled type="text" value="Charlotte" />
+              <div class="row none">
+                <img onclick="submitRename(11)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(11)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="family-relation-line"></div>
+        </div>
+      </div>
+      <!--4rd line-->
+      <div class="row">
+        <div class="family-3-children">
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/1.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(12)" class="person-name pointer">
+              <input class="cursor-text" id="12" disabled type="text" value="Mike" />
+              <div class="row none">
+                <img onclick="submitRename(12)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(12)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-left-4-line-3-child"></div>
+          </div>
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/2.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(13)" class="person-name pointer">
+              <input class="cursor-text" id="13" disabled type="text" value="Helen" />
+              <div class="row none">
+                <img onclick="submitRename(13)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(13)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-middle"></div>
+          </div>
+          <div class="person">
+            <div class="recycle-wrapper" >
+
+              <img class="person-img" src="images/15.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+
+            <div ondblclick="renamePerson(14)" class="person-name pointer">
+              <input class="cursor-text" id="14" disabled type="text" value="Julius" />
+              <div class="row none">
+                <img onclick="submitRename(14)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(14)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div class="child-line child-line-right-4-line-3-child"></div>
+          </div>   
+        </div>
+        <div class="family-1-children">
+          <div class="person">
+            <div class="recycle-wrapper" >
+            <img class="person-img" src="images/18.png" alt="Alex" />
+            <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+          </div>
+            <div ondblclick="renamePerson(15)" class="person-name pointer">
+              <input class="cursor-text" id="15" disabled type="text" value="Megan" />
+              <div class="row none">
+                <img onclick="submitRename(15)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(15)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="child-line child-line-middle"
+              style="left: 18%; width: 33px"
+            ></div>
+          </div>
+        </div>
+        <div class="family-2-children">
+          <div class="person">
+            <div class="recycle-wrapper" >
+              <img class="person-img" src="images/17.png" alt="Alex" />
+              <img onclick="openModal()" class="recycle" src="./images/recycle.svg" alt="Alex" />
+            </div>
+            <div ondblclick="renamePerson(16)" class="person-name pointer">
+              <input class="cursor-text" id="16" disabled type="text" value="Paul" />
+              <div class="row none">
+                <img onclick="submitRename(16)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(16)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="child-line child-line-middle"
+              style="left: 18%; width: 33px"
+            ></div>
+          </div>
+          <div class="person">
+            <div class="recycle-wrapper" >
+              <img class="person-img" src="images/16.png" alt="Alex" />
+              <img  class="recycle" src="./images/recycle.svg" onclick="openModal()" alt="Alex" style="margin: 0; padding: 0;"/>
+            </div>
+
+            <div ondblclick="renamePerson(17)" class="person-name pointer">
+              <input class="cursor-text" id="17" disabled type="text" value="Michell" />
+              <div class="row none">
+                <img onclick="submitRename(17)" class="sm-icon pointer" src="./images/check.png" alt="" />
+                <img onclick="dismissRename(17)" class="sm-icon pointer" src="./images/close.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row clock">
+        <div id="clock"></div>
+      </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h1>Choose file</h1>
+<input id="fileupload" type="file" name="fileupload" />
+<button onclick="modalClose()" class="close-btn">Close modal</button>
+</div>
+
+    </body>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,259 @@
+.round {
+  border-radius: 100px;
+  border-style: dotted;
+  border-color: green;
+  box-shadow: 7px 5px 5px 0px #000;
+}
+
+@font-face {
+  font-family: AlexBrush-Regular;
+  src: url(fonts/AlexBrush-Regular.ttf);
+}
+
+h1 {
+  font-family: "AlexBrush-Regular";
+}
+
+h1.class1 {
+  font-size: 60px;
+  text-align: center;
+  color: lightgreen;
+}
+
+BODY {
+  background: url(images/bg_wood.jpg) center center/cover no-repeat;
+  /* background-size: 100%;s */
+}
+
+.row {
+  text-align: center;
+}
+
+.family {
+  display: inline-block;
+  margin: 0 10px 20px;
+}
+
+.family-relation-line {
+  display: block;
+  border: 3px solid black;
+  width: 100px;
+  height: 3px;
+  border-top: transparent;
+  margin: 10px auto;
+  margin-right: 49px;
+}
+
+.family-3-children {
+  display: inline-block;
+  margin: 0 80px 20px;
+}
+.family-1-children {
+  position: relative;
+  right: 59px;
+  display: inline-block;
+  margin: 0 10px 20px;
+}
+.family-2-children {
+  display: inline-block;
+  margin: 0 70px 20px;
+}
+.person {
+  display: inline-block;
+  position: relative;
+}
+
+.recycle-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.person .person-img {
+  border-radius: 100px;
+  cursor: pointer;
+  border-style: dotted;
+  border-color: green;
+  box-shadow: 7px 5px 5px 0px #000;
+  width: 90px;
+  height: 90px;
+}
+
+/* .recycle {
+} */
+
+/* .person-img:hover + .recycle-wrapper {
+  display: initial;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  cursor: pointer;
+} */
+
+.recycle-wrapper > img:last-of-type {
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+}
+.recycle-wrapper:hover > img:last-of-type {
+  display: initial;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.person .person-name {
+  border: 3px solid green;
+  background-color: lightgreen;
+  height: 30px;
+  width: 62px;
+  /* width: fit-content; */
+  text-align: center;
+  border-radius: 10px 0 10px 0;
+  font-size: 14px;
+  margin: 0 16px 0 25px;
+  box-shadow: 7px 5px 5px black;
+}
+
+.person .person-name input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: transparent;
+  /* margin-bottom: 3px; */
+  border: none;
+  /* width: 40px; */
+}
+
+.person .person-name .row {
+  position: relative;
+  max-width: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.person .person-name .sm-icon {
+  height: 10px;
+  width: 10px;
+}
+.none {
+  display: none !important;
+}
+
+.person .person-name input:focus-visible {
+  outline: 0px;
+}
+
+.child-line {
+  border-bottom: 3px solid black;
+  width: 65px;
+  position: absolute;
+  top: -33px;
+}
+
+.child-line-right {
+  transform: rotate(30deg);
+  transform-origin: top left;
+  left: 0;
+}
+
+.child-line-left {
+  transform: rotate(330deg);
+  transform-origin: top right;
+  left: 50%;
+}
+.child-line-middle {
+  transform: rotate(270deg);
+  transform-origin: top right;
+  left: 25%;
+  width: 36px;
+}
+
+.child-line-right-4-line-3-child {
+  transform: rotate(22deg);
+  transform-origin: top left;
+  right: 59px;
+  width: 90px;
+}
+
+.child-line-left-4-line-3-child {
+  transform: rotate(340deg);
+  transform-origin: top right;
+  left: 69px;
+  width: 103px;
+}
+
+.pointer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: transparent;
+  /* margin-bottom: 3px; */
+  border: none;
+  width: 40px;
+  cursor: pointer;
+}
+
+.cursor-text {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  cursor: text;
+}
+
+.clock {
+  margin-top: 15px;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-btn {
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
